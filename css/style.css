@@ -1,0 +1,415 @@
+/* DEFINIMOS TEMPORALEMNTE PALETA DE COLORES, QUITAR ESTA SECCION AL FINAL */
+#PALETA_DE_COLORES {
+  color: #355070 #6D597A #B56576 #E56B6F #EAAC8B;
+}
+
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+body {
+  font-family: 'Mooli', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+
+  background-color: #EAAC8B;
+  color: #000000;
+}
+
+/* #region Header*/
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  background: #355070;
+  color: #E56B6F;
+
+  position: fixed;
+  width: 100%;
+  height: 90px;
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.10);
+  z-index: 1;
+
+}
+
+#logo,
+#contacto {
+  display: flex;
+  height: 55px;
+  width: 55px;
+  margin: 10px;
+}
+
+#logo,
+#contacto>img {
+  width: auto;
+  padding: 5px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  height: 55px;
+  font-size: 1.25rem;
+}
+
+nav ul {
+  list-style: none;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+nav li {
+  padding: 1rem 2rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: #E56B6F;
+  font-weight: 600;
+}
+
+nav li:hover,
+#contacto:hover {
+  background-color: #515575;
+  border-radius: 8px;
+}
+
+/* #region Header*/
+
+section {
+  scroll-margin-habilidades: 90px;
+  padding: 45px 90px;
+
+  /* tmp: para visualizar secciones */
+
+  border: 1px dashed #34495e;
+}
+
+/* TEMPORAL */
+/*section:not(#presentacion),
+section:not(#habilidades) {
+  // height: 100vh; 
+  border: 1px dashed #34495e;
+}*/
+
+section>h1 {
+  text-transform: uppercase;
+  font-size: 2rem;
+  color: #213246;
+
+  border-bottom: 5px solid #213246;
+  margin-bottom: 2rem;
+}
+
+#home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background: url("../img/Fotonasia.jpg") no-repeat center center fixed;
+  background-size: cover;
+
+  color: white;
+
+  height: 100vh;
+  /*z-index: 1;*/
+}
+
+.home-banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+
+  background-color: #34495e;
+  opacity: 0.9;
+  padding: 3rem;
+}
+
+.presentacion-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  gap: 60px;
+}
+
+.info-presentacion {
+  flex: 1;
+  text-align: center;
+  padding: 2rem;
+  background: #915F78;
+  box-shadow: 0 10px 8px #0000001a;
+  border-radius: 3px;
+}
+
+/*Video style */
+.embed-container {
+  position:relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+  position: absolute;
+  habilidades: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.destacado-info img {
+  max-width: 40%;
+}
+
+.star-rating {
+  color: gold;
+  font-size: 1.5rem;
+}
+
+.clientes-comentarios {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.comentario {
+  display: flex;
+  gap: 10px;
+  padding: 15px;
+  background-color: #E56B6F;
+  border-radius: 8px;
+}
+
+.cliente img {
+  width: 40px;
+  border-radius: 50%;
+}
+
+.cliente-mensaje {
+  flex: 1;
+  margin-bottom: 0.75rem;
+}
+
+.cliente-firma {
+  flex: 1;
+  text-align: center;
+  font-style: italic;
+  font-weight: 600;
+}
+
+/**/
+
+section#habilidades{
+  background-image: linear-gradient(45deg, #355070, #B56576);
+}
+
+.habilidades-container{
+  display: flex;
+
+}
+
+.card{
+  position: flex;
+  padding: 20px;
+  margin: 20px;
+  background: #B56576;
+  box-shadow: 0 10px rgb(0, 0, 0,.1);
+  border-radius: 3px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.card img{
+  width:100%;
+  border-radius: 3px;
+
+}
+
+.card h3{
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+}
+
+.card p{
+  margin-bottom: 10px;
+  color: #555;
+}
+
+button{
+  cursor: pointer;
+  background-color: #213246;
+  color: aquamarine;
+  font-size: 1.5rem;
+
+  width: 100%;
+  height: 42px;
+  padding: 0 2rem;
+  
+  border: none;
+
+  border-radius: 21px;
+  transition: color 0.5s;
+}
+
+button:hover{
+  background-color: #6D597A;
+}
+
+.eventos-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0% 90px;
+  gap: 60px;
+
+}
+
+
+#recomendaciones {
+  display: flex;
+  flex-direction: column;
+  /* flex-wrap: wrap;
+  height: 50px; */
+}
+
+.slider-container {
+  height: auto;
+  width: 100vh;
+  align-items: center;
+  display: flex;
+  overflow: auto;
+  scroll-snap-type: x mandatory;
+  overflow: auto;
+}
+
+.slider-container .slider {
+  scroll-snap-align: unset;
+
+}
+
+.slider-container img {
+  width: 100vh;
+  height: 100%;
+  object-fit: fill;
+
+}
+
+.slider-container2 {
+  height: auto;
+  /* width: 100vh; */
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+  scroll-snap-type: y mandatory;
+
+}
+
+.slider-container2 .slider2 {
+  scroll-snap-align: unset;
+
+}
+
+.responsive {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+@media (max-width:1820px) {
+  .responsive {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+
+footer {
+  background: #355070;
+  height: 50vh;
+}
+
+#btn-ir-arriba {
+  display: none;
+  cursor: pointer;
+
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+
+  background: #6D597A;
+  color: white;
+  height: 50px;
+  width: 50px;
+  border-radius: 25px;
+  border: none;
+
+  box-shadow: 0px 12px 7px rgba(0, 0, 0, .1);
+  transition: 300ms ease;
+}
+
+#btn-ir-arriba:hover {
+  background: #E56B6F;
+  transform: translateY(-0.5rem);
+}
+
+#btn-ir-arriba svg {
+  width: 25px;
+  fill: none;
+  stroke: white;
+  stroke-width: 3px;
+}
+
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+  object-fit: cover;
+}
+
+.column img {
+  margin-habilidades: 8px;
+  vertical-align: middle;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on habilidades of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
