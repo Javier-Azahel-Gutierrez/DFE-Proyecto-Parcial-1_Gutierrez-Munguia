@@ -1,9 +1,8 @@
-/* DEFINIMOS TEMPORALEMNTE PALETA DE COLORES, QUITAR ESTA SECCION AL FINAL */
 #PALETA_DE_COLORES {
-  color: #355070 #6D597A #B56576 #E56B6F #EAAC8B;
+  /*https://coolors.co/faa6ff-b77ddd-51368d-2f195f-8f6eaa-efc3f5*/
+  color: #faa6ff #b77ddd #b77ddd 
+  #51368d #2f195f #8f6eaa #efc3f5;
 }
-
-
 
 * {
   box-sizing: border-box;
@@ -37,7 +36,6 @@ header {
   height: 90px;
   box-shadow: 0 6px 8px rgba(0, 0, 0, 0.10);
   z-index: 1;
-
 }
 
 #logo,
@@ -134,6 +132,7 @@ section>h1 {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  text-align: center;
   align-items: center;
   gap: 1rem;
 
