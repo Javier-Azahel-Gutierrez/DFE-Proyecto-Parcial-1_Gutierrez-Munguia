@@ -7,6 +7,8 @@
    #bbc8ca #04151f
 }
 
+/* #region general*/
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -26,9 +28,6 @@ body {
 section {
   scroll-margin-habilidades: 90px;
   padding: 45px 90px;
-
-  /* tmp: para visualizar secciones */
-
   border: 1px dashed #34495e;
 }
 
@@ -41,6 +40,7 @@ section>h1 {
   border-bottom: 5px solid #213246;
   margin-bottom: 2rem;
 }
+/* #endregion general*/
 
 /* #region Header*/
 
@@ -71,7 +71,7 @@ header {
 #logo,
 #contacto>img {
   width: auto;
-  padding: 5px;
+  padding: 2px;
 }
 
 nav {
@@ -89,7 +89,7 @@ nav ul {
 }
 
 nav li {
-  padding: 1rem 2rem;
+  padding: 0.6rem 1rem;
 }
 
 nav a {
@@ -100,8 +100,75 @@ nav a {
 
 nav li:hover,
 #contacto:hover {
-  background-color: #c5c5c5;
+  background-color: #726e97;
   border-radius: 8px;
+}
+
+  /* #region dropdown*/
+.navbar {
+  overflow: hidden;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: #726e97;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #2f195f;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #726e97;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+/* #endregion dropdown*/
+
+@media screen and (max-width:920px) {
+  .header-horiz {
+    display: none;
+  }
 }
 
 /* #endregion Header*/
@@ -148,12 +215,39 @@ nav li:hover,
   border-radius: 80px;
 }
 
+@media screen and (max-width:892px) {
+  #home {
+    gap: 32px;
+    flex-direction: column;
+  }
+}
+
 /* #endregion home*/
 
-/* #region experty*/
+/* #region presentacion*/
 /* #endregion experty*/
 
-/* #region history*/
+/* #region home*/
+
+#habilidades > h3 {
+  text-align: center;
+}
+#small_wrap {
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.space-progm {
+  background: #9DB7C2;
+}
+.space-progm img{
+  width: 240px;
+  padding: 1rem;
+}
+/* #endregion home*/
+
+/* #region experiencia*/
 .bio {
   text-align: justify;
 }
@@ -175,6 +269,12 @@ nav li:hover,
   vertical-align: middle;
 }
 
+@media screen and (max-width:524px) {
+  .experiencia {
+    flex-direction: column;
+  }
+}
+
 .place {
   padding: 36px 0;
 }
@@ -184,6 +284,20 @@ nav li:hover,
 }
 
 /* #endregion histroy*/
+
+/* #region footer*/
+footer {
+  color: wheat;
+  background: #4E5868;
+  height: auto;
+}
+
+.redes-img{
+  /*height: 10px;*/
+  width: 10px;
+}
+
+/* #endregion footer*/
 
 /* #region button*/
 
