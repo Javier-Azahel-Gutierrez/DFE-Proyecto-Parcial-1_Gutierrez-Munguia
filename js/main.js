@@ -45,14 +45,3 @@ document.addEventListener("DOMContentLoaded", () => {
   })
 })
 
-document.addEventListener("DOMContentLoaded", function () {
-  var mySwiper = new Swiper(".slider-container", {
-    loop: true, 
-    autoplay: {
-      delay: 2000, 
-    },
-    pagination: {
-      el: ".slider-pagination", 
-    },
-  });
-});
