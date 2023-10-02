@@ -1,5 +1,7 @@
 
 console.log('Hola mundo!');
+let slideIndex = 0;
+showSlides();
 
 
 function mostrarMensajeInicial() {
@@ -11,20 +13,6 @@ function mostrarMensajeInicial() {
   }
 
 }
-
-//
-// FUNCTION DECLARATION: forma tracional de definir funciones con palabra clave function
-//
-// function funcionNoAnonima() {
-//   return 1 + 1;
-// }
-
-
-//
-// ARROW FUNCTION: sintaxis más concisa para definir funciones,
-//    especialmente útiles cuando se trata de funciones pequeñas y anónimas
-//
-// () => 1 + 1;
 
 document.addEventListener("DOMContentLoaded", () => {
   const scrollToBottomButtom = document.getElementById('btn-ir-arriba');
@@ -44,4 +32,18 @@ document.addEventListener("DOMContentLoaded", () => {
     })
   })
 })
+
+
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  slides[slideIndex-1].style.display = "block";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
 
