@@ -1,0 +1,6 @@
+https://www.meteomatics.com/en/api/getting-started/
+
+https://meteomatics.com/url-creator/
+
+https://api.meteomatics.com/2023-10-30T13:40:00.000-07:00/t_2m:C/28.9689346,-111.4473169/json?model=mix
+

@@ -14,9 +14,6 @@
   border: 0;
 }
 
-.mySlides1, .mySlides2 {display: none}
-img {vertical-align: middle;}
-
 body {
   font-family: 'Mooli', sans-serif;
   font-size: 18px;
@@ -29,7 +26,7 @@ body {
 section {
   scroll-margin-habilidades: 90px;
   padding: 45px 90px;
-  border: 1px dashed #34495e;
+  /* border: 1px #34495e; */
 }
 
 section>h1 {
@@ -169,7 +166,7 @@ nav li:hover,
 
 /* #endregion dropdown*/
 
-@media screen and (max-width:920px) {
+@media screen and (max-width:1080px) {
   .header-horiz {
     display: none;
   }
@@ -183,6 +180,7 @@ nav li:hover,
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 10px;
 
   background: url("../img/Fotonasia.jpg") no-repeat center center fixed;
   background-size: cover;
@@ -199,8 +197,7 @@ nav li:hover,
   justify-content: left;
   width: 360px;
   height: auto;
-  padding-right: 50px;
-  border-radius: 100px;
+  border-radius: 120px;
 }
 
 .home-banner {
@@ -222,6 +219,14 @@ nav li:hover,
   #home {
     gap: 32px;
     flex-direction: column;
+  }
+}
+
+@media screen and (max-width:715px) {
+  #home {
+    gap: 32px;
+    flex-direction: column;
+    height: fit-content;
   }
 }
 
@@ -298,12 +303,25 @@ nav li:hover,
 /* Slideshow container */
 .slideshow-container {
   max-width: 1000px;
+  max-height: 562px;
   position: relative;
   margin: auto;
 }
 
+.mySlides1,
+.mySlides2 {
+  display: none;
+  max-width: 1000px;
+  max-height: 562px;
+}
+
+img {
+  vertical-align: middle;
+}
+
 /* Next & previous buttons */
-.prev, .next {
+.prev,
+.next {
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -325,7 +343,8 @@ nav li:hover,
 }
 
 /* On hover, add a grey background color */
-.prev:hover, .next:hover {
+.prev:hover,
+.next:hover {
   background-color: #f1f1f1;
   color: black;
 }
@@ -335,7 +354,8 @@ nav li:hover,
 
 /* #region footer*/
 footer {
-  color: wheat;
+  text-align: center;
+  color: white;
   background: #4E5868;
   height: auto;
 }
@@ -343,6 +363,13 @@ footer {
 .redes-img {
   /*height: 10px;*/
   width: 10px;
+}
+
+.mailToMe {
+  padding: 15px;
+  display: inline-table;
+  background-color: #B2DBD8;
+  border-radius: 32px;
 }
 
 /* #endregion footer*/

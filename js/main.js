@@ -51,3 +51,16 @@ function showSlides(n, no) {
   x[slideIndex[no]-1].style.display = "block";  
 }
 
+const mailToMe = document.querySelector("mailToMe");
+
+mailToMe.onclick = function() {
+  document.execCommand("copy");
+}
+
+mailToMe.addEventListener("copy", function(event) {
+  event.preventDefault();
+  if (event.clipboardData) {
+    event.clipboardData.setData("text/plain", mailToMe.textContent);
+    console.log(event.clipboardData.getData("text"))
+  }
+});
