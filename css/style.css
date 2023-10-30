@@ -228,6 +228,11 @@ nav li:hover,
     flex-direction: column;
     height: fit-content;
   }
+  .home_img {
+    margin-top: 3rem;
+    width: 64%;
+    height: auto;
+  }
 }
 
 /* #endregion home*/
