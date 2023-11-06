@@ -22,11 +22,12 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   })
 
-  scrollToBottomButtom.addEventListener('click', () => {
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth'
-    })
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 100) {
+      scrollToBottomButtom.style.display = 'block';
+    } else {
+      scrollToBottomButtom.style.display = 'none';
+    }
   })
 })
 
@@ -51,11 +52,11 @@ function showSlides(n, no) {
   x[slideIndex[no]-1].style.display = "block";  
 }
 
-const mailToMe = document.querySelector("mailToMe");
+/*  const mailToMe = document.querySelector("mailToMe");
 
 mailToMe.onclick = function() {
   document.execCommand("copy");
-}
+} 
 
 mailToMe.addEventListener("copy", function(event) {
   event.preventDefault();
@@ -63,4 +64,4 @@ mailToMe.addEventListener("copy", function(event) {
     event.clipboardData.setData("text/plain", mailToMe.textContent);
     console.log(event.clipboardData.getData("text"))
   }
-});
+}); */
